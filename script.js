@@ -36,9 +36,9 @@ img.src = "img/canvas1.png";
 img.onload = function(){
 let x = 300;
 let y = 200;
-let speedx = 10;
-let speedy = 10;
-let radius = 150;
+let speedx = 7;
+let speedy = 7;
+let radius = 100;
 // membuat lingkaran
 function draw(){
 window. requestAnimationFrame(draw);
@@ -52,11 +52,11 @@ c. fill();
 
 if(x + radius >innerWidth || x - radius < 0){
     speedx = -speedx;
-    radius -= 2;
+
 } 
 if(y + radius >innerHeight || y - radius < 0){
     speedy = -speedy;
-    radius -= 2;
+
 } 
 
 x+= speedx;
